@@ -172,8 +172,13 @@ body{
   display: flex;
   justify-content: center;
 }
+.border{
+  border: solid 15px #0C1382;
+
+}
 .present-img{
   height: 410px;
+  opacity: 0;
 }
 .check-list{
   list-style: none;
@@ -194,10 +199,27 @@ body{
 .check-list-box{
   display: flex;
 }
-.first{
-  opacity: 0.8;
+
+.present-img.first{
+  opacity: 0.035;
 }
 
+.present-img.second{
+  opacity:0.043 ;
+}
+
+.present-img.third{
+  opacity: 0.055;
+}
+
+.present-img.fourth{
+  opacity: 0.09;
+}
+
+.present-img.fifth{
+  opacity: 1;
+  vertical-align: bottom;
+}
 
 /*footor*/
 .footer-copyright{
