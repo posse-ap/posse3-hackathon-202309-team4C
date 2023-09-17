@@ -22,7 +22,13 @@ height: 48px;
     height: 400px;
 }
     /*link*/
-
+.suggest-itemImage img{
+    width: 300px;
+}
+.suggest-itemBody{
+    width: 300px;
+    margin: 0 auto;
+}
     /*mypage*/
     .present-img{
         height:200px ;
