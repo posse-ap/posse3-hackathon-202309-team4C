@@ -15,7 +15,6 @@ body{
     position:fixed;
     top:0;
     left:0;
-    height:80px;
     width: 100%;
       background-color: white;
       padding: 0 24px;
@@ -219,12 +218,23 @@ body{
   gap: 10px;
   justify-content: start;
 }
+
+.list-item-check{
+  display: flex;
+}
+
 .box{
   border:10px solid;
   border-radius: 5px;
   color: #0C1382;
 }
-
+.finish{
+  opacity: 0;
+}
+.finish.done{
+  opacity: 1;
+  color:#A02438 ;
+}
 
 .room{
   display: flex;

@@ -26,12 +26,16 @@ new Splide('#js-suggestSlide',suggestSlideOptions).mount();
 function clear1() {
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('first');
+  const fin = document.getElementsByClassName('finish')[0];
+  fin.classList.add('done')
+
   }
 
 function clear2() {
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('second');
-
+  const fin = document.getElementsByClassName('finish')[1];
+  fin.classList.add('done')
 
 
 }
@@ -39,11 +43,15 @@ function clear2() {
 function clear3(){
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('third')
+  const fin = document.getElementsByClassName('finish')[2];
+  fin.classList.add('done')
 }
 
 function clear4(){
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('fourth')
+  const fin = document.getElementsByClassName('finish')[3];
+  fin.classList.add('done')
 }
 
 function clear5(){
@@ -51,6 +59,8 @@ function clear5(){
   present.classList.add('fifth')
   const memo = document.getElementsByClassName('present-memo')[0]
   memo.classList.add('presentExplain')
+  const fin = document.getElementsByClassName('finish')[4];
+  fin.classList.add('done')
 }
 
 // submitフォーム制御　制作者:瀬戸裕文
