@@ -22,6 +22,11 @@ btn1.addEventListener('click',function(){
   present.classList.add('first');
 });
 
+function clear1() {
+  const present = document.getElementsByClassName('present-img')[0];
+  present.classList.add('first');
+  }
+
 // submitフォーム制御　制作者:瀬戸裕文
 const sgbutton = document.getElementById("sg-button")
 
