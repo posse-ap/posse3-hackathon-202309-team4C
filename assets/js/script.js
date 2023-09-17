@@ -4,7 +4,7 @@
 
 //画像の透明度を動かす　製作者:
 const checkBox = document.querySelector('input[type="checkbox"]');
-const presentImg = document.querySelector(.'present-img');
+const presentImg = document.querySelector('.present-img');
 
 presentImg.addEventListener("click",function(){
 
@@ -33,7 +33,7 @@ function butotnClick(){
     console.log('チェック');
   } else {
     console.log('なし');
-  }
+  }}
 
 
 // submitフォーム制御　制作者:瀬戸裕文
