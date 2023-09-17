@@ -163,6 +163,10 @@ body{
   height: 100px;
 }
 
+.question-logo{
+  height: 30px;
+}
+
 /*mypage*/
 .img-box{
   display: flex;
@@ -189,6 +193,12 @@ body{
 }
 .check-list-box{
   display: flex;
+}
+.first{
+  opacity: 0.8;
+}
+.boxdiv{
+  color: #7da532;
 }
 /*footor*/
 .footer-copyright{
