@@ -1,7 +1,19 @@
 //透明フッダー　制作者:
 
 //タブ　制作者
-
+//suggest スライド作成 制作者：伊東柚衣
+const suggestSlideOptions={
+  type:'loop',
+  gap:40,
+  perPage:3,
+  pagination:true,
+  breakpoints:{
+    768:{
+      perPage:1
+    }
+  }
+}
+new Splide('#js-suggestSlide',suggestSlideOptions).mount();
 //やり直し
 const present = document.getElementsByClassName('present-img');
 
