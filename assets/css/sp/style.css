@@ -4,6 +4,7 @@
     /*header*/
 .header{
 height: 48px;
+padding: 0px;
 }
 .header-logo{
     width: 200px;
@@ -21,6 +22,58 @@ height: 48px;
 .mainvisual-img{
     height: 400px;
 }
+
+.header-buttonLine { /*ここから瀬戸編集*/
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #0c1382;
+    position: absolute;
+    left: 95%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .header-buttonLine:nth-of-type(1) {
+    top: 13px;
+  }
+  
+  .header-buttonLine:nth-of-type(2) {
+    top: 20px;
+  }
+  
+  .header-buttonLine:nth-of-type(3) {
+    top: 27px;
+  }
+
+  .header-List{
+    position: fixed;
+    inset: 0;
+    background-color: #F7F9F8;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 120px 24px 40px;
+    transition: visibility .3s linear , opacity .3s linear;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(1) {
+    transform: translateX(-50%) rotate(45deg);
+    top:20px;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header.is-open .header-buttonLine:nth-of-type(3) {
+    transform: translateX(-50%) rotate(-45deg);
+    top:20px;
+  }
+
+  .header.is-open .header-List {
+    visibility: visible;
+    opacity: 1;
+  }
     /*link*/
 
     /*mypage*/
