@@ -61,12 +61,16 @@ body{
 
 /*mainvisual*/
 .mainvisual-img{
-  background: url(../img/posse_main.jpg) center center/cover;
+  background: url(../img/posse_main.jpg) center center/cover no-repeat;
   height: 600px;
 }
 /*link*/
-.sugggest-explain{
-  margin-bottom: 100px;
+.explain{
+  margin-top: 100px;
+}
+.explain-title{
+  text-align: center;
+  font-size: 35px;
 }
 
 .detail {
@@ -79,8 +83,10 @@ body{
   margin-bottom: 10px;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* 開く前に見せたい行数を指定 */
+  -webkit-line-clamp: 3;
   text-align: center;
+  line-height: 1.8;
+  letter-spacing: .05em;
 }
 
 .detail:has(:checked) p {
@@ -149,6 +155,17 @@ body{
   text-align: center;
   font-size: 30px;
 }
+.splide__list{
+  display: flex;
+}
+.suggest-itemImage img{
+  width: 100%;
+  height: 100px;
+}
+
+.question-logo{
+  height: 30px;
+}
 
 /*mypage*/
 .img-box{
@@ -176,6 +193,12 @@ body{
 }
 .check-list-box{
   display: flex;
+}
+.first{
+  opacity: 0.8;
+}
+.boxdiv{
+  color: #7da532;
 }
 /*footor*/
 .footer-copyright{

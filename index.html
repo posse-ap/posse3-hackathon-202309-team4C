@@ -18,7 +18,8 @@
     />
     <script src="assets/js/script.js"></script>
   </head>
-  <body>
+  <body class="container">
+    <!-- ヘッダー -->
     <header class="header">
         <div class="header-inner">
       <div>
@@ -33,6 +34,14 @@
             </div>
             <p class="suggest-text">Suggest</p>
         </div>
+        <li class="header-ListItem"><a href="">
+          <div class="header-question-container">
+            <div class="question-img">
+                <img src="./assets/img/k0562_10.png" alt="" class="question-logo">
+            </div>
+            <p class="question-text">Question</p>
+          </div>
+        </a></li>
         </a>
         </li>
           <li class="header-ListItem"><a href=""></a></li>
@@ -42,20 +51,19 @@
     </div>
   </div>
     </header>
-    <main class="mainvisual-container">
+    <!-- メインビジュアル -->
+    <main>
       <section id="mainvisual">
         <div class="mainvisual-img"></div>
       </section>
       <section id="link">
-        <!-- ナビケーションボタン -->
-
         <!-- suggestの説明 -->
-      <div class="sugggest-explain">
-        <h2 class="suggest-explain-title">
+      <div class="explain">
+        <h2 class="explain-title">
           <span>Suggest</span>
         </h2>
         <div class="detail">
-        <p>新しいことに挑戦したいと思っているそこのあなた！！誰でも匿名でイベントの企画を提案できます。
+        <p class="detail-text">新しいことに挑戦したいと思っているそこのあなた！！誰でも匿名でイベントの企画を提案できます。
           <br>イベント開催までの流れ↓
           <br>匿名でイベントを提案→「いいね！」が一定数つく→運営したい人の募集開始→開催へ
           <br>レビュー機能で実際に運営した人の声を閲覧することが出来ます！！
@@ -66,9 +74,53 @@
       </label>
     </div>
       </div>
+
+      <!-- suggestスライド -->
+      <div id="js-eventSlide" class="splide suggest-slide">
+        <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide suggest-item" data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/Harbors week.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+          <p class="event-itemName">Harbors week
+          </p>
+        </div>
+      </li>
+      <li class="splide__slide suggest-item" data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/git lecture.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">Git Github講座</p>
+        </div>
+      </li>
+      <li class="splide__slide suggest-item " data-scroll>
+        <figure class="suggest-itemImage">
+        <img src="./assets/img/water balloon.JPG" alt=""> 
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">夏のDX</p>
+      </div>
+      </li>
+      <li class="splide__slide suggest-item " data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/dinner party.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">対面ご飯会</p>
+      </div>
+      </li>
+    </ul>
+  </div>
+  </div>
       </section>
+      <!-- マイページ -->
      <section id="mypage">
-            <div>My page</div>
+      <h2 class="explain-title">
+        <span>My page</span>
+      </h2>
             <div class="img-box">
                 <figure>
                     <img src="./assets/img/present.png" alt="" class="present-img">
@@ -79,7 +131,7 @@
                   <ul class="check-list">
                       <li class="list-item-box">
                           <div class="list-item-check">
-                              <input type="checkbox" class="box" id="box1">
+                               <div class="boxdiv" id="box1"></div>
                           </div>
                           <div class="list-item-task">
                               <p>○○を初めてした!</p>
@@ -87,7 +139,7 @@
                       </li>
                       <li class="list-item-box">
                           <div class="list-item-check">
-                              <input type="checkbox" class="box" id="box2">
+                              <button class="box" id="box2">
                           </div>
                           <div class="list-item-task">
                               <p>○○を初めてした!</p>
@@ -95,7 +147,7 @@
                       </li>
                       <li class="list-item-box">
                           <div class="list-item-check">
-                              <input type="checkbox" class="box" id="box3">
+                              <button class="box" id="box3">
                           </div>
                           <div class="list-item-task">
                               <p>○○を2回目行った!</p>
@@ -103,7 +155,7 @@
                       </li>
                       <li class="list-item-box">
                           <div class="list-item-check">
-                              <input type="checkbox" class="box" id="box4">
+                              <button type="checkbox" class="box" id="box4">
                           </div>
                           <div class="list-item-task">
                               <p>○○を2回目行った!</p>
@@ -111,7 +163,7 @@
                       </li>
                       <li class="list-item-box">
                           <div class="list-item-check">
-                              <input type="checkbox" name=“check” value="1" class="box" id="box5">
+                              <button type="checkbox" name=“check” value="1" class="box" id="box5">
                           </div>
                           <div class="list-item-task">
                               <p>○○を行った!</p>
