@@ -31,6 +31,7 @@ height: 48px;
         grid-template-columns: 1fr;
         margin: 0 auto;
         margin-top: 40px;
+        height: 360px;
     }
 
     /*フォーム */
@@ -44,6 +45,18 @@ height: 48px;
     }
     
     /*quesiton.htmlのCSS*/
+    .question_title {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            margin-top: 40px;
+    }
 
+    .qt-form {
+        width: 300px;
+    }
+
+    .qt-formListItem {
+        max-width: 500px;
+    }
     /*quiz.htmkのCSS*/
 }

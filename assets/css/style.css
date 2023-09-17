@@ -236,6 +236,7 @@ body{
     background-color: #dcf8a9;
     margin-top: 77px;
     align-items: center;
+    height: 300px;
 }
 
 .suggest_title_img img{
@@ -266,6 +267,7 @@ body{
     font-family: "M PLUS 1p";
     border: 2px solid green;
     border-radius: 14px;
+    background-color: white;
 }
 
 .sg-name:focus{
@@ -279,6 +281,8 @@ body{
     border: 2px solid green;
     border-radius: 14px;
     overflow-wrap: anywhere;
+    padding: 10px;
+    background-color: white;
 }
 
 .sg-form:focus{
@@ -326,4 +330,114 @@ body{
 }
 /*question.htmlのCSS*/
 
+/*全体的*/
+.qt-body {
+    background-color: #fff5f5;
+}
+.question_title_text{
+    font-size: 60px;
+    display: block;
+}
+
+.question_title_engtext{
+    font-size: 30px;
+}
+.question_title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: #ffacac;
+    margin-top: 77px;
+    align-items: center;
+    height: 300px;
+}
+
+.question_title_img img{
+    width:100px;
+}
+
+.question_detailtext {
+    font-size:26px;
+    margin-top: 30px;
+}
+
+.qt-form-write-guide {
+    font-size: 17px;
+    color:rgb(255, 96, 96);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.qt-form-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qt-name{
+    height:50px;
+    width:300px;
+    font-family: "M PLUS 1p";
+    border: 2px solid rgb(255, 96, 96);
+    border-radius: 14px;
+    background-color: white;
+}
+
+.qt-name:focus{
+    outline: #ff0800 2px solid;
+}
+
+.qt-form{
+    height:150px;
+    width:600px;
+    font-family: "M PLUS 1p";
+    border: 2px solid rgb(255, 96, 96);
+    border-radius: 14px;
+    overflow-wrap: anywhere;
+    padding: 10px;
+    background-color: white;
+}
+
+.qt-form:focus{
+    outline: #ff0000cf 2px solid;
+}
+.qt-button{
+    width:300px;
+    height:50px;
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: rgb(255, 169, 165);
+    border: 1px solid rgb(255, 96, 96);
+    font-family: "M PLUS 1p";
+    border-radius: 10px;
+}
+
+.qt-button:hover {
+    background-color: rgb(255, 96, 96);
+}
+
+.qt-formListItem {
+    width: 90%;
+    background-color: white;
+    font-family: "M PLUS 1p";
+    font-size: 18px;
+    border: 2px solid rgb(255, 96, 96);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 10px 0px;
+    max-width:960px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 0px rgb(255, 96, 96);
+    padding: 20px 20px;
+}
+
+.qt-formnd {
+    font-size: 16px;
+    color: #ff7c7c;
+}
+
+.qt-formListDetail {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    margin-top:12px;
+}
 /*quiz.htmlのCSS*/
