@@ -15,17 +15,37 @@ const suggestSlideOptions={
 }
 new Splide('#js-suggestSlide',suggestSlideOptions).mount();
 //やり直し
-const present = document.getElementsByClassName('present-img');
+//const present = document.getElementsByClassName('present-img');
 
-const btn1 = document.getElementById('box1');
-btn1.addEventListener('click',function(){
-  present.classList.add('first');
-});
+//const btn1 = document.getElementById('box1');
+//btn1.addEventListener('click',function(){
+//  present.classList.add('first');
+//});
 
 function clear1() {
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('first');
   }
+
+function clear2() {
+  const present = document.getElementsByClassName('present-img')[0];
+  present.classList.add('second');
+}
+
+function clear3(){
+  const present = document.getElementsByClassName('present-img')[0];
+  present.classList.add('third')
+}
+
+function clear4(){
+  const present = document.getElementsByClassName('present-img')[0];
+  present.classList.add('fourth')
+}
+
+function clear5(){
+  const present = document.getElementsByClassName('present-img')[0];
+  present.classList.add('fifth')
+}
 
 // submitフォーム制御　制作者:瀬戸裕文
 const sgbutton = document.getElementById("sg-button")
