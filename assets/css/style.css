@@ -1,0 +1,48 @@
+/*全体のCSS*/
+
+/* index.htmlのCSS*/
+
+/*header*/
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    height:80px;
+    width: 100%;
+      background-color: white;
+      border-bottom: solid 1px var(--gray-light-color);
+      padding: 0 24px;
+      z-index: 10000;
+      transition: background-color .3s linear;
+      display: flex !important; 
+      justify-content: space-between; 
+      align-items: center; 
+      transition: background-color .4s linear;
+      margin-left: 80px;
+  
+  }
+  
+  .header-List{
+    display: flex;
+    list-style: none;
+    margin-right: 120px;
+  }
+  
+  .header-ListItem{
+    margin:20px;
+    color: black;
+  }
+
+/*mainvisual*/
+
+/*link*/
+
+/*mypage*/
+
+/*footor*/
+
+/*suggest.htmlのCSS*/
+
+/*question.htmlのCSS*/
+
+/*quiz.htmlのCSS*/
