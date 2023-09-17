@@ -21,6 +21,11 @@ height: 48px;
         margin: 0 auto;
     }
 
+    /*フォーム */
+
+    .sg-form {
+        width: 300px;
+    }
     /*quesiton.htmlのCSS*/
 
     /*quiz.htmkのCSS*/
