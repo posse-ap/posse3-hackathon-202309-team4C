@@ -1,0 +1,23 @@
+@media (max-width: 768px){
+    /*全体的*/
+
+    /*header*/
+
+    /*mainvisual*/
+
+    /*link*/
+
+    /*mypage*/
+
+    /*footor*/
+
+    /*suggest.htmlのCSS*/
+    .suggest_title{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    /*quesiton.htmlのCSS*/
+
+    /*quiz.htmkのCSS*/
+}
