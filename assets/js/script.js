@@ -1,13 +1,6 @@
 //透明フッダー　制作者:
 
-//タブ　制作者:
-
-//画像の透明度を動かす　製作者:荒谷英里
-//let obj = document.getElementsByClassName("present-img")[0];
-//    obj.style.opacity = 0.5;
-
-
-
+//タブ　制作者
 
 //やり直し
 const present = document.getElementsByClassName('present-img');
@@ -16,12 +9,6 @@ const btn1 = document.getElementById('box1');
 btn1.addEventListener('click',function(){
   present.classList.add('first');
 });
-
-
-
-
-
-
 
 // submitフォーム制御　制作者:瀬戸裕文
 const sgbutton = document.getElementById("sg-button")
