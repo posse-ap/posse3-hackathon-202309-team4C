@@ -25,7 +25,8 @@ function OnButtonClickSg () {
 	let day = now.getDate();
     document.getElementById("sg-form").value="";
     sgform = "<div class='sg-formListItem'>" + "<p class='sg-formnd'>" + "name:" + sgname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "<p class='sg-formListDetail'>" + sgform + "</p>";
-    document.getElementById("sg-formList").innerHTML = document.getElementById("sg-formList").innerHTML + sgform;
+    const sgformList =document.getElementById("sg-formList");
+    sgformList.insertAdjacentHTML('afterbegin', sgform);
 }
 
 // question フォーム制御 制作者:

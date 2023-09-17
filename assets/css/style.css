@@ -231,7 +231,8 @@ body{
     grid-template-columns: 1fr 1fr;
     text-align: center;
     background-color: #dcf8a9;
-    margin-top: 80px;
+    margin-top: 77px;
+    align-items: center;
 }
 
 .suggest_title_img img{
@@ -241,11 +242,14 @@ body{
 /*フォーム*/
 .suggest_detailtext {
     font-size:26px;
+    margin-top: 30px;
 }
 
 .sg-form-write-guide {
     font-size: 17px;
     color:green;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .sg-form-box{
     display:flex;
@@ -304,6 +308,7 @@ body{
     max-width:960px;
     border-radius: 7px;
     box-shadow: 5px 5px 0px green;
+    padding: 20px 20px;
 }
 
 .sg-formnd {
@@ -314,6 +319,7 @@ body{
 .sg-formListDetail {
     font-size: 20px;
     color: rgb(51, 51, 51);
+    margin-top:12px;
 }
 /*question.htmlのCSS*/
 
