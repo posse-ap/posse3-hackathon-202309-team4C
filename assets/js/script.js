@@ -33,6 +33,9 @@ function clear1() {
 function clear2() {
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('second');
+
+
+
 }
 
 function clear3(){
