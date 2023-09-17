@@ -202,6 +202,7 @@ body{
   display: flex;
   justify-content: center;
 }
+
 .border{
   border: solid 15px #0C1382;
 
@@ -219,15 +220,16 @@ body{
   justify-content: start;
 }
 .box{
-  margin-top:15px;
   border:10px solid;
-  border-radius: 10px;
+  border-radius: 5px;
+  color: #0C1382;
 }
 
 
 .room{
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 .check-list-box{
   display: flex;
@@ -236,6 +238,8 @@ body{
 .present-img.first{
   opacity: 0.035;
 }
+
+
 
 .present-img.second{
   opacity:0.043 ;
@@ -256,6 +260,7 @@ body{
 .present-memo{
   opacity: 0;
   font-size: 3px;
+  padding-top:15px
 }
 
 .present-memo.presentExplain{
