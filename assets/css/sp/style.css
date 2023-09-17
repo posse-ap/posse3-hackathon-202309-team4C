@@ -2,9 +2,13 @@
     /*全体的*/
 
     /*header*/
-
+.header{
+height: 48px;
+}
     /*mainvisual*/
-
+.mainvisual-img{
+    height: 400px;
+}
     /*link*/
 
     /*mypage*/
