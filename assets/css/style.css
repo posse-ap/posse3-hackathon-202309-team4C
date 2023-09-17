@@ -57,6 +57,15 @@ body{
 .question-text{
   margin-left: 15px;
 }
+
+.suggest-img{
+  width: 30px;
+  height: 50px;
+}
+.question-img{
+  width: 40px;
+  height: 60px;
+}
 /*mainvisual*/
 .mainvisual-img{
   background: url(../img/posse_main.jpg) center center/cover no-repeat;
@@ -67,7 +76,7 @@ body{
   margin: 100px 0;
 }
 .explain{
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .explain-title{
   text-align: center;
