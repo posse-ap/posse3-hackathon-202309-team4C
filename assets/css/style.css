@@ -189,8 +189,11 @@ body{
   justify-content: start;
 }
 .box{
-  margin-top:22px;
+  margin-top:15px;
+  border:10px solid;
+  border-radius: 10px;
 }
+
 
 .room{
   display: flex;
@@ -220,7 +223,14 @@ body{
   opacity: 1;
   vertical-align: bottom;
 }
+.present-memo{
+  opacity: 0;
+  font-size: 3px;
+}
 
+.present-memo.presentExplain{
+  opacity: 1;
+}
 /*footor*/
 .footer-copyright{
   text-align: center;

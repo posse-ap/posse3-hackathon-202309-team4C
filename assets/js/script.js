@@ -33,6 +33,8 @@ function clear4(){
 function clear5(){
   const present = document.getElementsByClassName('present-img')[0];
   present.classList.add('fifth')
+  const memo = document.getElementsByClassName('present-memo')[0]
+  memo.classList.add('presentExplain')
 }
 
 // submitフォーム制御　制作者:瀬戸裕文
