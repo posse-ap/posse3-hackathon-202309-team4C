@@ -2,9 +2,21 @@
     /*全体的*/
 
     /*header*/
+.header{
+height: 48px;
+}
+.header-logo{
+    width: 200px;
+}
 
+.suggest-logo{
+    height: 35px;
+    width: 25px;
+}
     /*mainvisual*/
-
+.mainvisual-img{
+    height: 400px;
+}
     /*link*/
 
     /*mypage*/
@@ -20,6 +32,11 @@
         margin: 0 auto;
     }
 
+    /*フォーム */
+
+    .sg-form {
+        width: 300px;
+    }
     /*quesiton.htmlのCSS*/
 
     /*quiz.htmkのCSS*/
