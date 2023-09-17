@@ -1,3 +1,10 @@
+//ハンバーガーメニュー　制作者:瀬戸裕文
+const button = document.getElementById("js-headerButton");
+
+button.addEventListener("click" , () => {
+    const header = document.getElementById("js-header");
+    header.classList.toggle("is-open");
+})
 //透明フッダー　制作者:
 
 //タブ　制作者
@@ -15,13 +22,8 @@ const suggestSlideOptions={
   }
 }
 new Splide('#js-suggestSlide',suggestSlideOptions).mount();
-//やり直し
-//const present = document.getElementsByClassName('present-img');
 
-//const btn1 = document.getElementById('box1');
-//btn1.addEventListener('click',function(){
-//  present.classList.add('first');
-//});
+//マイページの画像のアニメーション　制作者：荒谷英里
 
 function clear1() {
   const present = document.getElementsByClassName('present-img')[0];
