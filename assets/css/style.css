@@ -38,7 +38,23 @@
 /*link*/
 
 /*mypage*/
-
+.img-box{
+  display: flex;
+  justify-content: center;
+}
+.present-img{
+  height: 410px;
+}
+.check-list{
+  list-style: none;
+}
+.list-item-box{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  margin-top:22px;
+}
 /*footor*/
 
 /*suggest.htmlのCSS*/
