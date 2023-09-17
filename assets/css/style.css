@@ -197,6 +197,14 @@ body{
 }
 
 /*mypage*/
+
+.detail-myPage{
+  padding-bottom:50px ;
+}
+
+.detail-text-my{
+  letter-spacing: .05em;
+}
 .img-box{
   display: flex;
   justify-content: center;
