@@ -30,6 +30,7 @@ height: 48px;
     .suggest_title{
         grid-template-columns: 1fr;
         margin: 0 auto;
+        margin-top: 40px;
     }
 
     /*フォーム */
@@ -37,6 +38,11 @@ height: 48px;
     .sg-form {
         width: 300px;
     }
+
+    .sg-formListItem {
+        max-width: 500px;
+    }
+    
     /*quesiton.htmlのCSS*/
 
     /*quiz.htmkのCSS*/

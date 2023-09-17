@@ -17,11 +17,11 @@
     <header class="header">
         <div class="header-inner">
       <div>
-        <img src="assets/img/posse3_logo.png" alt="" />
+        <a href="index.html"><img src="assets/img/posse3_logo.png" alt="" /></a>
       </div>
       <div>
         <ul class="header-List">
-          <li class="header-ListItem"><a href="">
+          <li class="header-ListItem"><a href="#">
             <div class="header-suggest-container">
             <div class="suggest-img">
                 <img src="./assets/img/bluewoman.png" style="display: block;" alt="" width="30px" height="50px">
@@ -48,8 +48,12 @@
         </div>
         <div>
             <p class="suggest_detailtext">あなたが提案したい企画を匿名で投票できます！<br>みんなでPOSSEを盛り上げよう！！</p>
+            </div>
             <div class="sg-form-box">
-                <input id="sg-form" type="text" class="sg-form"  placeholder="新しい企画教えて！">
+                <p class="sg-form-write-guide">名前を入力してください（匿名での提出も可能です）</p>
+                <input id="sg-name" type="text" class="sg-name" value="匿名">
+                <p class="sg-form-write-guide">提案したい案を教えてください。</p>
+                <textarea id="sg-form" type="text" class="sg-form"  placeholder="新しい企画教えて！" wrap="soft"></textarea>
                 <button onclick="OnButtonClickSg()" id="sg-button" class="sg-button">送信</button>
             </div>
         </div>
