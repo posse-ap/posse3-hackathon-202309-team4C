@@ -87,9 +87,16 @@ body{
 .button-room{
   padding: 20px;
   border-right: solid;
+  -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
 }
 
-
+.button-room:hover{
+    background-color: white;
+    color: #0C1382;
+}
 /*link*/
 .explain{
   margin-top: 100px;
@@ -400,6 +407,10 @@ body{
     border: 1px solid green;
     font-family: "M PLUS 1p";
     border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
 }
 
 .sg-button:hover {
@@ -491,7 +502,7 @@ body{
 }
 
 .q-or-a {
-    border:10px solid red;
+    border:7px solid red;
     margin:20px;
     border-radius: 3px;
     font-family: "M PLUS 1p";
@@ -543,10 +554,14 @@ body{
     border: 1px solid rgb(255, 96, 96);
     font-family: "M PLUS 1p";
     border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
 }
 
 .qt-button:hover {
-    background-color: rgb(255, 96, 96);
+    background-color: red;
 }
 
 .qt-formListItem {
