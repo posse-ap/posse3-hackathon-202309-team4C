@@ -163,6 +163,10 @@ body{
   height: 100px;
 }
 
+.suggest-item{
+  list-style: none;
+}
+
 .question-logo{
   height: 30px;
 }
