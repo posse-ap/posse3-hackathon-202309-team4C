@@ -25,13 +25,8 @@ body{
       justify-content: space-between; 
       align-items: center; 
       transition: background-color .4s linear;
-      /* margin-left: 80px; */
   }
 
-  /* .header-room{
-    display: flex;
-    
-  } */
   .header-inner{
     width: 100%;
     display: flex;
@@ -43,7 +38,7 @@ body{
   .header-List{
     display: flex;
     list-style: none;
-    /* margin-left: 700px; */
+    align-items: center;
   }
   
   .header-ListItem{
@@ -51,15 +46,16 @@ body{
     color: black;
     font-size: 20px;
   }
-.header-suggest-container{
+.header-container{
   display: flex;
   align-items: center;
 }
 .suggest-text{
   margin-left: 15px;
+  font-size: 20px;
 }
-.question-logo{
-  height: 30px;
+.question-text{
+  margin-left: 15px;
 }
 /*mainvisual*/
 .mainvisual-img{
@@ -71,17 +67,17 @@ body{
   margin: 100px 0;
 }
 .explain{
-  /* margin-top: 100px; */
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .explain-title{
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
 .detail {
   position: relative;
-  margin-top: 40px;
 }
 
 .detail p {
