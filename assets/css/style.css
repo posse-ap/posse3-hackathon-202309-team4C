@@ -77,10 +77,19 @@ body{
 }
 .list-item-box{
   display: flex;
-  justify-content: center;
+  gap: 10px;
+  justify-content: start;
 }
 .box{
   margin-top:22px;
+}
+
+.room{
+  display: flex;
+  justify-content: center;
+}
+.check-list-box{
+  display: flex;
 }
 /*footor*/
 
