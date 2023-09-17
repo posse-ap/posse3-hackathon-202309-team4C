@@ -7,6 +7,7 @@ const suggestSlideOptions={
   gap:40,
   perPage:3,
   pagination:true,
+  focus:0,
   breakpoints:{
     768:{
       perPage:1
