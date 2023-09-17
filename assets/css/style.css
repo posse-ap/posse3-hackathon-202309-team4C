@@ -72,6 +72,25 @@ body{
   background: url(../img/posse_main.jpg) center center/cover no-repeat;
   height: 600px;
 }
+/* 遷移ボタン */
+.nav{
+  background-color: #0C1382;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.navList{
+  display: flex;
+  font-size: 25px;
+}
+.navItem{
+  width: 33.33%;
+}
+.button-room{
+  padding: 20px;
+  border-right: solid;
+}
+
+
 /*link*/
 #link{
   margin: 100px 0;
