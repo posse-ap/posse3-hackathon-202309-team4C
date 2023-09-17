@@ -86,7 +86,11 @@ padding: 0px;
     .present-img{
         height:200px ;
     }
-
+    .present-memo{
+      width: 200px;
+      font-size: 10px;
+      margin: 0 auto;
+    }
     /*footor*/
 
     /*suggest.htmlのCSS*/
