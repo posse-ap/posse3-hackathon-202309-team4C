@@ -68,8 +68,13 @@
         <div class="qt-form-box">
             <p class="qt-form-write-guide">名前を入力してください（匿名での提出も可能です）</p>
             <input id="qt-name" type="text" class="qt-name" value="匿名">
+            <p class="qt-form-write-guide">質問ですか？返信ですか？</p>
+            <form id="q-or-a-box">
+                <label><input type="radio" name="q-or-a" value="question" class="q-or-a" id="qt-check1"checked>質問</label>
+                <label><input type="radio" name="q-or-a" value="anser" class="q-or-a">返信</label>
+            </form>
             <p class="qt-form-write-guide">質問したい内容、もしくは返信したい内容を記入してください</p>
-            <textarea id="qt-form" type="text" class="qt-form"  placeholder="" wrap="soft"></textarea>
+            <textarea id="qt-form" type="text" class="qt-form"  placeholder="こちらに質問、返信を記入してね！" wrap="soft"></textarea>
             <button onclick="OnButtonClickQt()" id="qt-button" class="qt-button">送信</button>
         </div>
     </div>

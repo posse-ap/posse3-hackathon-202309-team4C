@@ -337,6 +337,7 @@ body{
     color:green;
     margin-top: 30px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .sg-form-box{
     display:flex;
@@ -368,6 +369,9 @@ body{
     background-color: white;
 }
 
+.sg-form::placeholder{
+    color:#c0cfa8;
+}
 .sg-form:focus{
     outline: #dcf8a9 4px solid;
 }
@@ -449,6 +453,7 @@ body{
     color:rgb(255, 96, 96);
     margin-top: 30px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .qt-form-box{
     display:flex;
@@ -469,6 +474,19 @@ body{
     outline: #ff0800 2px solid;
 }
 
+.q-or-a {
+    border:10px solid red;
+    margin:20px;
+    border-radius: 3px;
+    font-family: "M PLUS 1p";
+    font-size: 17px;
+}
+
+.q-or-a:checked {
+    border: 13px solid blue;
+    border-radius: 3px;
+}
+
 .qt-form{
     height:150px;
     width:600px;
@@ -480,6 +498,23 @@ body{
     background-color: white;
 }
 
+.qt-form::placeholder{
+    color:#ffcbcb;
+}
+
+.qt-form-q {
+    width:40px;
+    background-color: #0c1382;
+    color: white;
+    border-radius: 3px;
+}
+
+.qt-form-a {
+    width:40px;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border-radius: 3px;
+}
 .qt-form:focus{
     outline: #ff0000cf 2px solid;
 }
@@ -516,6 +551,7 @@ body{
 .qt-formnd {
     font-size: 16px;
     color: #ff7c7c;
+    margin-top: 12px;
 }
 
 .qt-formListDetail {
