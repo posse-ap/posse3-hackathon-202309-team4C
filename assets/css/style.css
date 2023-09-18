@@ -243,6 +243,7 @@ body{
   display: flex;
   gap: 10px;
   justify-content: start;
+  margin-bottom: 20px;
 }
 
 .list-item-check{
@@ -256,10 +257,12 @@ body{
 }
 .finish{
   opacity: 0;
+  margin-right:5px ;
 }
 .finish.done{
   opacity: 1;
   color:#A02438 ;
+  margin-right: 5px;
 }
 
 .room{
