@@ -75,10 +75,12 @@ function OnButtonClickSg () {
     let year = now.getFullYear();
 	let mon = now.getMonth()+1; 
 	let day = now.getDate();
+    if(sgform.length > 0) {
     document.getElementById("sg-form").value="";
     sgform = "<div class='sg-formListItem'>" + "<p class='sg-formnd'>" + "Name:" + sgname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "<p class='sg-formListDetail'>" + sgform + "</p>";
     const sgformList =document.getElementById("sg-formList");
     sgformList.insertAdjacentHTML('afterbegin', sgform);
+    }
 }
 
 
@@ -92,14 +94,16 @@ function  OnButtonClickQt () {
     let year = now.getFullYear();
 	let mon = now.getMonth()+1; 
 	let day = now.getDate();
+    if(qtform.length > 0) {
     document.getElementById("qt-form").value = "";
     if(document.getElementById("qt-check1").checked == true) {
-        qtform = "<div class='qt-formListItem'>" + "<p class='qt-form-q'>" + "質問" + "</p>" +"<p class='qt-formnd'>" + "Name:" + qtname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "<p class='qt-formListDetail'>" + qtform + "</p>";
+        qtform = "<div class='qt-formListItem'>" + "<div class='qt-flex'>" + "<p class='qt-form-q'>" + "質問" + "</p>" +"<p class='qt-formnd'>" + "Name:" + qtname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "</div>" + "<p class='qt-formListDetail'>" + qtform + "</p>";
     const qtformList =document.getElementById("qt-formList");
     qtformList.insertAdjacentHTML('afterbegin', qtform);
     } else {
-    qtform = "<div class='qt-formListItem'>" + "<p class='qt-form-a'>" +  "返信" + "</p>" + "<p class='qt-formnd'>" + "Name:" + qtname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "<p class='qt-formListDetail'>" + qtform + "</p>";
+    qtform = "<div class='qt-formListItem'>" + "<div class='qt-flex'>" + "<p class='qt-form-a'>" +  "回答" + "</p>" + "<p class='qt-formnd'>" + "Name:" + qtname + "   " + "Date:" + year + "年" + mon + "月" + day + "日" + "</p>" + "</div>" + "<p class='qt-formListDetail'>" + qtform + "</p>";
     const qtformList =document.getElementById("qt-formList");
     qtformList.insertAdjacentHTML('afterbegin', qtform);
     }
+}
 }

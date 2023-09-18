@@ -82,11 +82,30 @@ padding: 0px;
     width: 300px;
     margin: 0 auto;
 }
+
+.navList{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.button-room{
+    width: 300%;
+    border-right: 4px solid;
+    border-bottom: 2px solid;
+    border-left: 4px solid;
+}
     /*mypage*/
     .present-img{
         height:200px ;
     }
-
+    .present-memo{
+      width: 200px;
+      font-size: 10px;
+      margin: 0 auto;
+    }
     /*footor*/
 
     /*suggest.htmlのCSS*/
@@ -120,6 +139,10 @@ padding: 0px;
 
     .qt-formListItem {
         max-width: 500px;
+    }
+
+    .qt-formnd{
+        font-size: 14px;
     }
     /*quiz.htmkのCSS*/
 }
