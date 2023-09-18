@@ -60,6 +60,7 @@ body{
 .suggest-img{
   width: 30px;
   height: 50px;
+  margin-top: -15px;
 }
 .question-img{
   width: 40px;
@@ -97,6 +98,18 @@ body{
     background-color: white;
     color: #0C1382;
 }
+/* scrollボタン */
+/* .scrolldown{
+position:absolute;
+	bottom:1%;
+	right:50%
+  animation: arrowmove 1s ease-in-out infinite;}
+  
+  @keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+   100%{bottom:1%;}
+} */
 /*link*/
 .explain{
   margin-top: 100px;
@@ -105,7 +118,7 @@ body{
 .explain-title{
   text-align: center;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-weight: bold;
 }
 
