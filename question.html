@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question POSSE③熱中ウェブサイト</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sp/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=M+PLUS+1p&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Plus+Jakarta+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body class="qt-body">
+    <header class="header" id="js-header">
+        <div class="header-inner">
+      <div>
+        <a href="index.html"><img src="assets/img/posse3_logo.png" alt="" class="header-logo"></a>
+      </div>
+      <button class="header-button" id="js-headerButton">
+        <span class="header-buttonLine"></span>
+        <span class="header-buttonLine"></span>
+        <span class="header-buttonLine"></span>
+    </button>
+      <div>
+        <ul class="header-List">
+          <li class="header-ListItem"><a href="./suggest.html">
+            <div class="header-container">
+            <div class="suggest-img">
+                <img src="./assets/img/bluewoman.png" class="suggest-logo" alt="">
+            </div>
+            <p class="suggest-text">Suggest</p>
+        </div>
+        <li class="header-ListItem"><a href="#">
+          <div class="header-container">
+            <div class="question-img">
+                <img src="./assets/img/k0562_10.png" alt="" class="question-logo">
+            </div>
+            <p class="question-text">Question
+              <a href=""></a>
+            </p>
+          </div>
+        </a></li>
+        </a>
+        </li>
+          <li class="header-ListItem"><a href=""></a></li>
+          <li class="header-ListItem"><a href=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </header>
+<div class="container">
+    <div class="question_title">
+        <div class="question_title_textbox">
+            <h1 class="question_title_text">質問</h1>
+            <p class="question_title_engtext">Question</p>
+        </div>
+        <figure class="question_title_img">
+            <img src="assets/img/k0562_10.png" alt="">
+        </figure>
+    </div>
+    <div>
+        <p class="question_detailtext">匿名で質問をすることができ、その質問に簡単に回答できます！<br>みんなと能動的に教わって、教えられる関係を作ろう！！</p>
+        </div>
+        <div class="qt-form-box">
+            <p class="qt-form-write-guide">名前を入力してください（匿名での提出も可能です）</p>
+            <input id="qt-name" type="text" class="qt-name" value="匿名">
+            <p class="qt-form-write-guide">質問ですか？回答ですか？</p>
+            <form id="q-or-a-box">
+                <label><input type="radio" name="q-or-a" value="question" class="q-or-a" id="qt-check1"checked>質問</label>
+                <label><input type="radio" name="q-or-a" value="anser" class="q-or-a">回答</label>
+            </form>
+            <p class="qt-form-write-guide">質問したい内容、もしくは返信したい内容を記入してください</p>
+            <textarea id="qt-form" type="text" class="qt-form"  placeholder="こちらに質問、返信を記入してね！" wrap="soft"></textarea>
+            <button onclick="OnButtonClickQt()" id="qt-button" class="qt-button">送信</button>
+        </div>
+    </div>
+    <div id="qt-formList">
+    </div>
+</div>
+</div>
+<footer>
+    <div class="footer-copyright">
+        <small lang="en">©2023 09 hackathon nigirimaguro</small>
+    </div>
+</footer>
+</body>
+</html>

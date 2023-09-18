@@ -1,16 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POSSE3熱中ウェブサイト</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/sp/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=M+PLUS+1p&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Plus+Jakarta+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/splide.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sp/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=M+PLUS+1p&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Plus+Jakarta+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <!-- ヘッダー -->
+    <header class="header" id="js-header">
+        <div class="header-inner">
+      <div>
+        <a href="#"><img src="assets/img/posse3_logo.png" alt="#" class="header-logo"></a>
+      </div>
+      <button class="header-button" id="js-headerButton">
+        <span class="header-buttonLine"></span>
+        <span class="header-buttonLine"></span>
+        <span class="header-buttonLine"></span>
+    </button>
+      <div>
+        <ul class="header-List">
+          <li class="header-ListItem"><a href="./suggest.html">
+            <div class="header-container">
+            <div class="suggest-img">
+                <img src="./assets/img/bluewoman.png" class="suggest-logo" alt="">
+            </div>
+            <p class="suggest-text">Suggest</p>
+        </div>
+        <li class="header-ListItem"><a href="./question.html">
+          <div class="header-container">
+            <div class="question-img">
+                <img src="./assets/img/k0562_10.png" alt="" class="question-logo">
+            </div>
+            <p class="question-text">Question
+              <a href=""></a>
+            </p>
+          </div>
+        </a></li>
+        </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </header>
+    <!-- メインビジュアル -->
+    <main>
+      <section id="mainvisual">
+        <div class="mainvisual-img"></div>
+      </section>
+
+      <section id="Suggest">
+        <!-- 遷移ボタン -->
+        <div class="nav">
+          <ul class="navList">
+            <li class="navItem">
+              <a href="./suggest.html">
+                <div class="button-room">
+                  <p class="nav-text">Suggest</p>
+                </div>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./question.html">
+                <div class="button-room">
+                  <p class="nav-text">Question</p>
+                </div>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="#mypage">
+                <div class="button-room">
+                  <p class="nav-text">My page</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- scroll downボタン -->
+        <!-- <div class="scrolldown"><span>Scroll</span></div> -->
+        <!-- suggestの説明 -->
+      <div class="explain">
+        <h2 class="explain-title">
+          <span>Suggest</span>
+        </h2>
+        <div class="detail">
+        <p class="detail-text">新しいことに挑戦したいと思っているそこのあなた！！誰でも匿名でイベントの企画を提案できます。
+          <br>イベント開催までの流れ↓
+          <br>匿名でイベントを提案→「いいね！」が一定数つく→運営したい人の募集開始→開催へ
+          <br>レビュー機能で実際に運営した人の声を閲覧することが出来ます！！
+        </p>
+        <label>
+          <input type="checkbox"/>
+          続きを読む
+      </label>
+    </div>
+      </div>
+
+      <!-- suggestスライド -->
+      <div id="js-suggestSlide" class="splide suggest-slide">
+        <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide suggest-item" data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/Harbors week.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+          <p class="suggest-itemName">Harbors week
+          </p>
+        </div>
+      </li>
+      <li class="splide__slide suggest-item" data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/git lecture.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">Git Github講座</p>
+        </div>
+      </li>
+      <li class="splide__slide suggest-item " data-scroll>
+        <figure class="suggest-itemImage">
+        <img src="./assets/img/water balloon.JPG" alt="" >
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">夏のDX</p>
+      </div>
+      </li>
+      <li class="splide__slide suggest-item " data-scroll>
+        <figure class="suggest-itemImage">
+          <img src="./assets/img/dinner party.JPG" alt="">
+        </figure>
+        <div class="suggest-itemBody">
+        <p class="suggest-itemName">対面ご飯会</p>
+      </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</section>
+  <!-- question説明 -->
+  <section id="Question"></section>
+  <div class="explain">
+    <h2 class="explain-title">
+      <span>Question</span>
+    </h2>
+    <div class="detail">
+    <p class="detail-text">
+      「教えることは教わること」にあるように、質問することは双方にメリットがあり!
+      <br>Q&A機能で分からない部分を解消することが出来ます!もちろん匿名でも利用可能！
+      <br>活発に質問し合うことで、技術力向上を目指しませんか？
+    </p>
+    <label>
+      <input type="checkbox"/>
+      続きを読む
+  </label>
+</div>
+  </div>
+
+      
+      <!-- マイページ -->
+     <section id="mypage">
+      <h2 class="explain-title">
+        <span>My page</span>
+      </h2>
+      <div class="detail-myPage">
+        <p class="detail-text-my">達成したらボタンをクリック！<br>達成するほど、"POSSE③の最近の１枚"が出現！！</p>
+      </div>
+            <div class="img-box">
+                <figure class="border">
+                    <img src="./assets/img/present.png" alt="" class="present-img">
+                </figure>
+            </div>
+            <div class="present-memo">
+              <p>[画像の解説]</p>
+              <date> 9月17日</date>
+              <p>4期生がタンクの使い方がわからずに困っていると、はやとさんが!ただタンクをただ立てるだけだった<br>「ジェネレーションギャップだ！」と驚くはやとさん。突っ込むるい。<br>いえいえ、純粋に４期生の知識不足です(笑)
+              </p>
+            </div>
+            <div class="room">
+              <div class="check-list-box">
+                  <ul class="check-list">
+                      <li class="list-item-box">
+                            <div class="list-item-check">
+                              <div class="finish">clear</div>
+                                <button class="box" id="box1" onclick="clear1()"></button>
+                            </div>
+                            <div class="list-item-task">
+                                <p>初めて質問を送った!</p>
+                            </div>
+                      </li>
+                      <li class="list-item-box">
+                         <div class="list-item-check">
+                            <div class="finish">clear</div>
+                              <button class="box" id="box2" onclick="clear2()">
+                          </div>
+                          <div class="list-item-task">
+                              <p>初めて質問に解答出来た!</p>
+                          </div>
+                      </li>
+                      <li class="list-item-box">
+                          <div class="list-item-check">
+                            <div class="finish">clear</div>
+                              <button class="box" id="box3" onclick="clear3()">
+                          </div>
+                          <div class="list-item-task">
+                              <p>初めて企画を提案した!</p>
+                          </div>
+                      </li>
+                      <li class="list-item-box">
+                          <div class="list-item-check">
+                            <div class="finish">clear</div>
+                              <button class="box" id="box4" onclick="clear4()">
+                          </div>
+                          <div class="list-item-task">
+                              <p>質問に対して解答出来た!</p>
+                          </div>
+                      </li>
+                      <li class="list-item-box">
+                          <div class="list-item-check">
+                            <div class="finish">clear</div>
+                              <button class="box" id="box5" onclick="clear5()">
+                          </div>
+                          <div class="list-item-task">
+                              <p>企画を実行出来た!</p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-copyright">
+            <small lang="en">©2023 09 hackathon nigirimaguro</small>
+        </div>
+    </footer>
+    <script src="./assets/js/splide.min.js"></script>
     <script src="assets/js/script.js"></script>
-</head>
-<body>
-</body>
+  </body>
 </html>

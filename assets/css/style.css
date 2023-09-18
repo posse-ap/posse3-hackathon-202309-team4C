@@ -1,0 +1,636 @@
+/*全体のCSS*/
+body{
+    font-family: 'Plus Jakarta Sans','M PLUS 1p', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* index.htmlのCSS*/
+
+/*header*/
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+      background-color: white;
+      padding: 0 24px;
+      z-index: 10000;
+      transition: background-color .3s linear;
+      display: flex !important; 
+      justify-content: space-between; 
+      align-items: center; 
+      transition: background-color .4s linear;
+  }
+
+  .header-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .header-List{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .header-ListItem{
+    margin:20px;
+    color: black;
+    font-size: 20px;
+  }
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.suggest-text{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.question-text{
+  margin-left: 15px;
+}
+
+.suggest-img{
+  width: 30px;
+  height: 50px;
+  margin-top: -15px;
+}
+.question-img{
+  width: 40px;
+  height: 60px;
+}
+
+/*mainvisual*/
+.mainvisual-img{
+  background: url(../img/posse_main.jpg) center center/cover no-repeat;
+  height: 600px;
+}
+/* 遷移ボタン */
+.nav{
+  background-color: #0C1382;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.navList{
+  display: flex;
+  font-size: 25px;
+}
+.navItem{
+  width: 33.33%;
+}
+.button-room{
+  padding: 20px;
+  border-right: solid;
+  -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+}
+
+.button-room:hover{
+    background-color: white;
+    color: #0C1382;
+}
+/* scrollボタン */
+/* .scrolldown{
+position:absolute;
+	bottom:1%;
+	right:50%
+  animation: arrowmove 1s ease-in-out infinite;}
+  
+  @keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+   100%{bottom:1%;}
+} */
+/*link*/
+.explain{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.explain-title{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.detail {
+  position: relative;
+}
+
+.detail p {
+  display: -webkit-box;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: .05em;
+}
+
+.detail:has(:checked) p {
+  display: block;
+}
+
+.detail p::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .9) 50%, hsla(0, 0%, 100%, .9) 0, #fff);
+  content: '';
+}
+
+.detail:has(:checked) p::after {
+  content: none;
+}
+
+.detail label {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .4em 1.2em;
+  border-radius: 1px;
+  background-color: #0c1382;
+  color: #fff;
+  font-size: .7em;
+}
+
+.detail label:hover {
+  border:1px solid #0c1382;
+  background-color: #fff;
+  color: #0c1382;
+  cursor: pointer;
+}
+
+.detail:has(:checked) label {
+  display: none;
+}
+
+.detail label::after {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: '';
+}
+
+.detail label:hover::after{
+  background-color: #0c1382;
+}
+
+.detail input {
+  display: none;
+}
+.suggest-explain-title{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* スライダー */
+.splide__list{
+  display: flex;
+}
+
+.splide__track{
+  height: 275px;
+}
+.suggest-itemImage img{
+  width: 100%;
+  height: 200px;
+}
+
+.suggest-item{
+  list-style: none;
+}
+
+.suggest-itemName{
+  font-size: 16px;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.suggest-itemBody{
+  background-color: #0c1382;
+  color: #fff;
+}
+
+.splide__arrow{
+    width: 40px !important;
+    height: 40px !important;
+    border: solid 1.5px #0C1382 !important;
+    background-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+.splide__arrow svg path {
+    fill: #0C1382;
+  }
+
+  .splide__pagination__page.is-active {
+    background: #0C1382;
+  }
+
+  .splide__pagination__page {
+    background: #989eef;
+  }
+/*mypage*/
+
+.detail-myPage{
+  padding-bottom:50px ;
+}
+
+.detail-text-my{
+  letter-spacing: .05em;
+}
+.img-box{
+  display: flex;
+  justify-content: center;
+}
+
+.border{
+  border: solid 15px #0C1382;
+
+}
+.present-img{
+  height: 410px;
+  opacity: 0;
+}
+.check-list{
+  list-style: none;
+}
+.list-item-box{
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.list-item-check{
+  display: flex;
+}
+
+.box{
+  border:10px solid;
+  border-radius: 5px;
+  color: #0C1382;
+}
+.finish{
+  opacity: 0;
+  margin-right:5px ;
+}
+.finish.done{
+  opacity: 1;
+  color:#A02438 ;
+  margin-right: 5px;
+}
+
+.room{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.check-list-box{
+  display: flex;
+}
+
+.present-img.first{
+  opacity: 0.035;
+}
+
+
+
+.present-img.second{
+  opacity:0.043 ;
+}
+
+.present-img.third{
+  opacity: 0.055;
+}
+
+.present-img.fourth{
+  opacity: 0.09;
+}
+
+.present-img.fifth{
+  opacity: 1;
+  vertical-align: bottom;
+}
+.present-memo{
+  opacity: 0;
+  font-size: 13px;
+  padding-top:15px
+}
+
+.present-memo.presentExplain{
+  opacity: 1;
+}
+/*footor*/
+.footer-copyright{
+  text-align: center;
+  margin-top: 24px;
+    border-top: solid 1px var(black);
+    /* color: var(--gray-color); */
+    letter-spacing: .1em;
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 24px
+}
+/*suggest.htmlのCSS*/
+/*全体的*/
+
+.sg_body {
+    background-color: #fbfff5;
+}
+/* タイトル */
+.suggest_title_text{
+    font-size: 60px;
+    display: block;
+}
+
+.suggest_title_engtext{
+    font-size: 30px;
+}
+.suggest_title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: #dcf8a9;
+    margin-top: 77px;
+    align-items: center;
+    height: 300px;
+}
+
+.suggest_title_img img{
+    width:100px;
+}
+
+/*フォーム*/
+.suggest_detailtext {
+    font-size:26px;
+    margin-top: 30px;
+}
+
+.sg-form-write-guide {
+    font-size: 17px;
+    color:green;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.sg-form-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sg-name{
+    height:50px;
+    width:300px;
+    font-family: "M PLUS 1p";
+    border: 2px solid green;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.sg-name:focus{
+    outline: #dcf8a9 4px solid;
+}
+
+.sg-form{
+    height:150px;
+    width:600px;
+    font-family: "M PLUS 1p";
+    border: 2px solid green;
+    border-radius: 14px;
+    overflow-wrap: anywhere;
+    padding: 10px;
+    background-color: white;
+}
+
+.sg-form::placeholder{
+    color:#c0cfa8;
+}
+.sg-form:focus{
+    outline: #dcf8a9 4px solid;
+}
+.sg-button{
+    width:300px;
+    height:50px;
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: greenyellow;
+    border: 1px solid green;
+    font-family: "M PLUS 1p";
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+}
+
+.sg-button:hover {
+    background-color: #7da532;
+}
+
+.sg-formListItem {
+    width: 90%;
+    background-color: white;
+    font-family: "M PLUS 1p";
+    font-size: 18px;
+    border: 2px solid green;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 10px 0px;
+    max-width:960px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 0px green;
+    padding: 20px 20px;
+}
+
+.sg-formnd {
+    font-size: 16px;
+    color: #a8bd84;
+}
+
+.sg-formListDetail {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    margin-top:12px;
+}
+/*question.htmlのCSS*/
+
+/*全体的*/
+.qt-body {
+    background-color: #fff5f5;
+}
+.question_title_text{
+    font-size: 60px;
+    display: block;
+}
+
+.question_title_engtext{
+    font-size: 30px;
+}
+.question_title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: #ffacac;
+    margin-top: 77px;
+    align-items: center;
+    height: 300px;
+}
+
+.question_title_img img{
+    width:100px;
+}
+
+.question_detailtext {
+    font-size:26px;
+    margin-top: 30px;
+}
+
+.qt-form-write-guide {
+    font-size: 17px;
+    color:rgb(255, 96, 96);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.qt-form-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qt-name{
+    height:50px;
+    width:300px;
+    font-family: "M PLUS 1p";
+    border: 2px solid rgb(255, 96, 96);
+    border-radius: 14px;
+    background-color: white;
+}
+
+.qt-name:focus{
+    outline: #ff0800 2px solid;
+}
+
+.q-or-a {
+    border:7px solid red;
+    margin:20px;
+    border-radius: 3px;
+    font-family: "M PLUS 1p";
+    font-size: 17px;
+}
+
+.q-or-a:checked {
+    border: 13px solid blue;
+    border-radius: 3px;
+}
+
+.qt-form{
+    height:150px;
+    width:600px;
+    font-family: "M PLUS 1p";
+    border: 2px solid rgb(255, 96, 96);
+    border-radius: 14px;
+    overflow-wrap: anywhere;
+    padding: 10px;
+    background-color: white;
+}
+
+.qt-form::placeholder{
+    color:#ffcbcb;
+}
+
+.qt-form-q {
+    width:40px;
+    background-color: #0c1382;
+    color: white;
+    border-radius: 3px;
+    height:20px;
+}
+
+.qt-form-a {
+    width:40px;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border-radius: 3px;
+}
+.qt-form:focus{
+    outline: #ff0000cf 2px solid;
+}
+.qt-button{
+    width:300px;
+    height:50px;
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: rgb(255, 169, 165);
+    border: 1px solid rgb(255, 96, 96);
+    font-family: "M PLUS 1p";
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+}
+
+.qt-button:hover {
+    background-color: red;
+}
+
+.qt-formListItem {
+    width: 90%;
+    background-color: white;
+    font-family: "M PLUS 1p";
+    font-size: 18px;
+    border: 2px solid rgb(255, 96, 96);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 10px 0px;
+    max-width:960px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 0px rgb(255, 96, 96);
+    padding: 20px 20px;
+}
+
+.qt-formnd {
+    font-size: 16px;
+    color: #ff7c7c;
+    margin-top: 9.5px;
+    margin-top: -2.0px;
+    margin-left: 13px;
+}
+
+.qt-formListDetail {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    margin-top:12px;
+}
+
+.qt-flex {
+    display: flex;
+    align-items: center;
+}
+/*quiz.htmlのCSS*/
