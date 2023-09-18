@@ -234,6 +234,25 @@ position:absolute;
   color: #fff;
 }
 
+.splide__arrow{
+    width: 40px !important;
+    height: 40px !important;
+    border: solid 1.5px #0C1382 !important;
+    background-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+.splide__arrow svg path {
+    fill: #0C1382;
+  }
+
+  .splide__pagination__page.is-active {
+    background: #0C1382;
+  }
+
+  .splide__pagination__page {
+    background: #989eef;
+  }
 /*mypage*/
 
 .detail-myPage{
@@ -547,6 +566,7 @@ position:absolute;
     background-color: #0c1382;
     color: white;
     border-radius: 3px;
+    height:20px;
 }
 
 .qt-form-a {
@@ -595,12 +615,19 @@ position:absolute;
 .qt-formnd {
     font-size: 16px;
     color: #ff7c7c;
-    margin-top: 12px;
+    margin-top: 9.5px;
+    margin-top: -2.0px;
+    margin-left: 13px;
 }
 
 .qt-formListDetail {
     font-size: 20px;
     color: rgb(51, 51, 51);
     margin-top:12px;
+}
+
+.qt-flex {
+    display: flex;
+    align-items: center;
 }
 /*quiz.htmlのCSS*/
