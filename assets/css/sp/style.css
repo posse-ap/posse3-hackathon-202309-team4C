@@ -136,5 +136,9 @@ padding: 0px;
     .qt-formListItem {
         max-width: 500px;
     }
+
+    .qt-formnd{
+        font-size: 14px;
+    }
     /*quiz.htmkのCSS*/
 }
